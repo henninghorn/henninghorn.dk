@@ -1,0 +1,13 @@
+# Site settings
+baseurl = "https://henninghorn.dk/"
+languageCode = "da-dk"
+title = "Henning Horn"
+theme = "henninghorn"
+
+[params]
+  description = "Jeg læser informationsvidenskab på Aarhus Universitet. Har tidligere arbejdet hos bl.a. Timekit, GAFFA og KathArt Interactive."
+  enableRSS = true
+
+[blackfriday]
+  hrefTargetBlank = true
+  plainIDAnchors = true

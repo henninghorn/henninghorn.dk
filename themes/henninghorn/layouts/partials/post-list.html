@@ -1,0 +1,10 @@
+<ul class="post-list">
+  {{ range first 10 (where .Site.Pages "Params.hidden" "ne" "true") }}
+  {{ $url := replace .Permalink .Site.BaseURL "" }}
+    {{ if ne $url "frontpage/" }}
+      <li>
+        <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span> | <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>

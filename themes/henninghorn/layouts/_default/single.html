@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+  <body>
+    <div class="container">
+      <div class="post">
+        <h1> {{ .Title }}</h1>
+        <div class="date">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </div>
+        {{ .Content }}
+      </div>
+
+      <h2>Læs mere</h2>
+      {{ partial "post-list.html" . }}
+
+      {{ template "_internal/disqus.html" . }}
+    </div>
+
+    {{ partial "js.html" . }}
+  </body>
+</html>
