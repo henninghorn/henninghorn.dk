@@ -11,6 +11,7 @@ MetaDataFormat = "yaml"
 [params]
   description = "Jeg læser informationsvidenskab på Aarhus Universitet. Har tidligere arbejdet hos bl.a. Timekit, GAFFA og KathArt Interactive."
   enableRSS = true
+  name = "Henning Horn"
 
 [blackfriday]
   hrefTargetBlank = true
