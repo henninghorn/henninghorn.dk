@@ -4,6 +4,8 @@ languageCode = "da-dk"
 title = "Henning Horn"
 theme = "henninghorn"
 
+MetaDataFormat = "yaml"
+
 [params]
   description = "Jeg læser informationsvidenskab på Aarhus Universitet. Har tidligere arbejdet hos bl.a. Timekit, GAFFA og KathArt Interactive."
   enableRSS = true

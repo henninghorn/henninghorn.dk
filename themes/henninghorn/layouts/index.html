@@ -1,12 +1,15 @@
 {{ partial "header.html" . }}
   <body>
     <div class="container">
-      {{ partial "frontpage.html" . }}
+      <div class="profileImage"></div>
+      <section class="content">
+        {{ partial "frontpage.html" . }}
 
-      <h2>Blog posts</h2>
-      {{ partial "post-list.html" . }}
+        <h2>Blog posts &darr;</h2>
+        {{ partial "post-list.html" . }}
+      </section>
     </div>
 
-    {{ partial "js.html" . }}
+    {{ partial "footer.html" . }}
   </body>
 </html>

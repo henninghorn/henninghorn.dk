@@ -5,9 +5,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	box-sizing: border-box;
 }
 
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 body {
 	color: #555;
 	font-family: 'Libre Baskerville', serif;
+	background: url(../images/geometry.png);
 }
 
 h1 {
@@ -32,11 +38,31 @@ h2 {
 	margin: 1.5em 0 1.25em 0;
 }
 
+nav {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 0 0 10%;
+	top: 5vw;
+	text-transform: uppercase;
+	position: absolute;
+}
+nav a {
+	text-decoration: none;
+	color: #888;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
 .container {
-	margin: 10%;
+	margin: 10% 10% 0 10%;
 	max-width: 600px;
 	width: 80%;
 	animation: fadein .6s ease-out;
+	position: relative;
+}
+
+section.content {
+	min-height: 50vh;
 }
 
 p {
@@ -45,7 +71,15 @@ p {
 	margin-bottom: 2.2em;
 }
 
-a {
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+section.content a {
 	border-bottom: 1px solid #27ae60;
 	color: inherit;
 	padding-bottom: 2px;
@@ -57,7 +91,7 @@ a {
 	transition: background .2s, color .2s;
 }
 
-a:hover {
+section.content a:hover {
 	background: #27ae60;
 	color: #fff;
 }
@@ -73,6 +107,10 @@ a:hover {
 
 .post-list a h3 {
 	display: inline-block;
+}
+
+.post {
+	min-height: 30vh;
 }
 
 .post h1 {
@@ -97,15 +135,68 @@ pre code {
 	padding: 1em;
 	line-height: 1.33em;
 	border-radius: 8px;
+	width: 700px;
+	margin-left: -25px;
+}
+
+code {
+	font-family: 'Inconsolata', monospace;
+	background: #fff;
+	padding: 4px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+footer {
+	font-family: 'Inconsolata', monospace;
+}
+
+footer a.social {
+	color: #777;
+	text-decoration: none;
+}
+footer a:hover.social {
+	text-decoration: underline;
+}
+
+.profileImage {
+	border-radius: 100%;
+	box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+	z-index: -1;
+	position: absolute;
+	right: -450px;
+	width: 400px;
+	height: 400px;
+	background: url('/images/profile.jpg');
+	background-size: cover;
+	transition: opacity 1s;
+}
+
+@media (max-width: 1024px) {
+	.profileImage {
+		opacity: 0;
+	}
+
 }
 
 @media (max-width: 700px) {
 	.container {
 		width: auto;
 	}
+
+	pre code {
+		width: auto;
+		margin-left: 0;
+	}
 }
 
 @media (max-width: 500px) {
+	nav {
+		margin: 10px 1.25em;
+		top: 0;
+		padding: none;
+	}
+
 	.container {
 		margin: 1.25em;
 	}
@@ -113,10 +204,13 @@ pre code {
 	h1 {
 		font-size: 1.5em;
 	}
-	p {
+	p, .post-list li, .post .date {
 		font-size: 0.7em;
 		line-height: 2em;
 		margin-bottom: 2em;
+	}
+	.post-list li span.date {
+		width: 80px;
 	}
 }
 
