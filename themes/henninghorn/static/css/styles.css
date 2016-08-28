@@ -164,7 +164,7 @@ footer a:hover.social {
 	box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
 	z-index: -1;
 	position: absolute;
-	right: -450px;
+	right: -420px;
 	width: 400px;
 	height: 400px;
 	background: url('/images/profile.jpg');
@@ -172,7 +172,7 @@ footer a:hover.social {
 	transition: opacity 1s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 	.profileImage {
 		opacity: 0;
 	}
