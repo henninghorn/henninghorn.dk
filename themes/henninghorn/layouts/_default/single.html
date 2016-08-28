@@ -8,7 +8,7 @@
         <div class="post">
           <h1> {{ .Title }}</h1>
           <div class="date">
-            @ {{ .Date.Format "Jan 2, 2006" }}
+            {{ .Date.Format "Jan 2, 2006" }}
           </div>
           {{ .Content }}
         </div>
