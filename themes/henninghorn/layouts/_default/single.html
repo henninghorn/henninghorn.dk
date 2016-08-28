@@ -16,7 +16,10 @@
         <h2>Læs mere &darr;</h2>
         {{ partial "post-list.html" . }}
 
-        {{ template "_internal/disqus.html" . }}
+        <div class="comments">
+          <h2>Kommentarer</h2>
+          {{ template "_internal/disqus.html" . }}
+        </div>
       </section>
     </div>
 
