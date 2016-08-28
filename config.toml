@@ -4,6 +4,7 @@ languageCode = "da-dk"
 title = "Henning Horn - Informationsvidenskabsstuderende og webudvikler bosat i Aarhus"
 theme = "henninghorn"
 googleAnalytics = "UA-7802599-4"
+disqusShortname = "henninghorn"
 
 MetaDataFormat = "yaml"
 
