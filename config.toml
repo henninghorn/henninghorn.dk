@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://henninghorn.dk/"
 languageCode = "da-dk"
-title = "Henning Horn"
+title = "Henning Horn - Informationsvidenskabsstuderende og webudvikler bosat i Aarhus"
 theme = "henninghorn"
 
 MetaDataFormat = "yaml"
