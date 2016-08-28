@@ -38,6 +38,10 @@ h2 {
 	margin: 1.5em 0 1.25em 0;
 }
 
+.post h2 {
+	color: #e74c3c;
+}
+
 nav {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0 0 0 10%;
