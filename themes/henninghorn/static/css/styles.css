@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-	color: #bdc3c7;
+	color: #7f8c8d;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.25em;
 	font-weight: 700;
@@ -149,6 +149,10 @@ code {
 	padding: 4px;
 	border: 1px solid #eee;
 	border-radius: 5px;
+}
+
+.comments {
+	margin-top: 3em;
 }
 
 footer {
