@@ -9,9 +9,12 @@ I den forbindelse fik jeg øjnene op for [GitLab](https://about.gitlab.com/), og
 En ting førte til en anden, og pludselig læste jeg om GitLab Pages, hvor man gratis kan hoste et statisk site med eget domæne, og ved hjælp af deres CI kunne sitet blive bygget hos dem.
 
 ## Hugo - Motoren bag
-> A Fast and Flexible Static Site Generator - https://gohugo.io/
+> A Fast and Flexible Static Site Generator<br>
+> - https://gohugo.io/
 
 Ved hjælp af velstrukturerede markdown filer og templates genererer Hugo et statisk site. Filerne bliver gemt i mappen `./public`, og det er denne mappe man skal uploade til sin host. Det er så her, at det smarte kommer ind i billedet når man bruger Gitlab. Man skal nemlig bare pushe til sit repo og så genererer Gitlabs CI runner sitet ved hjælp af Hugo på deres servere.
+
+Når man er i færd med at udvikle sit site og/eller skriver indhold, kan man køre det lokalt og se sine ændringer live (lokalt), takket være LiveReload featuren i Hugo.
 
 ## Gitlab + Hugo
 Jeg har lavet et almindeligt og public [git repo](https://gitlab.com/henninghorn/henninghorn.dk) hos Gitlab, hvor jeg pusher min Hugo “kildekode”. Udover mine Hugo filer indeholder mit repo en `.gitlab-ci.yml` fil, som har følgende indhold:
