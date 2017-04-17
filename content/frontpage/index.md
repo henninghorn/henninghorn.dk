@@ -7,7 +7,7 @@ title: Henning Horn
 **Jeg brænder for at udvikle værdiskabende løsninger gennem arbejde og leg med kode - én linje ad gangen 🚀**
 
 Til dagligt læser jeg informationsvidenskab på AU, og er derudover også ansat som instruktor, hvor jeg underviser førsteårsstuderende i programmering.
-Derudover arbejder jeg freelance, men søger pt. en deltidsstilling i Aarhus (eller remote).
+Desuden arbejder jeg freelance, men søger pt. en deltidsstilling i Aarhus (eller remote).
 
 Tech stack: [Vue](https://vuejs.org/) + [Webpack](https://webpack.js.org/), [Laravel](https://laravel.com/) og [Lumen](https://lumen.laravel.com/), [Parse](https://github.com/parse-community/parse-server), samt andre Node.js pakker.
 
